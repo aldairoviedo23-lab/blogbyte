@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="icon" href="./assets/imgs/favi.png" type="image/png" sizes="256x256">
+  <meta charset="UTF-8">
+  <title>Ejercicios</title>
+</head>
+    <body id="main">
+        <h1 class="titulo">Ejercicios con JavaScript 🛠️</h1>
+            <nav id="cardsFunciones">
+
+                    <!-- Palíndromo -->
+                    <div class="card">
+                        <h2 class="txtH">Detectar Palíndromo</h2>
+                        <input type="text" id="palindromoInput" placeholder="Escribe una frase">
+                        <button onclick="verificarPalindromo()">Verificar</button>
+                        <div id="palindromoResultado" class="resultado"></div>
+                    </div>
+
+                <div class="card">
+                    <!-- Comparar números -->
+                    <h2>Comparar dos números</h2>
+                    <input type="number" id="num1" placeholder="Número 1">
+                    <input type="number" id="num2" placeholder="Número 2">
+                    <button onclick="compararNumeros()">Comparar</button>
+                    <div id="numerosResultado" class="resultado"></div>
+                </div>
+
+                <div class="card">
+                    <!-- Vocales en frase -->
+                    <h2>Analizar vocales en una frase</h2>
+                    <input type="text" id="fraseInput" placeholder="Escribe una frase">
+                    <button onclick="analizarVocales()">Analizar</button>
+                    <div id="vocalesResultado" class="resultado"></div>
+                    <div id="conteoVocales" class="resultado"></div>
+                </div>
+            </nav>
+
+            <!-- Peticiones con AJAX-->
+               <!-- 1. Mostrar URL actual y permitir cambiarla -->
+        <div id="ajaxCard">
+            <label for="url">URL>/:</label>
+            <input type="text" id="url" value="">
+            <button id="btnMostrar">Mostrar Contenidos</button>
+            <h2>Contenidos 📦</h2>
+            <div id="contenidos" class="zonaHead"></div>
+
+                <div class="estados">
+                    <!-- 3. Estados de la petición -->
+                    <h2>Estados de la petición 🔎</h2>
+                    <div id="estado" class="zona"></div>
+
+                    <!-- 4. Cabeceras HTTP -->
+                    <h2>Cabeceras HTTP de la respuesta 📰 </h2>
+                    <div id="cabeceras" class="zona"></div>
+
+                    <!-- 5. Código de estado -->
+                    <h2>Código de estado 🌐</h2>
+                     <div id="codigo" class="zona"></div>
+                </div>
+        </div>
+
+
+        <!-- Importar el archivo JS y AJAX -->
+            <script src="./assets/funcion.js"></script>
+    </body>
+</html>
